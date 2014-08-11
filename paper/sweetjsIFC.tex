@@ -1,0 +1,80 @@
+\documentclass{article}
+
+\usepackage{fullpage}
+\usepackage{citesort}
+\usepackage{url}
+
+\title{Macros and Information Flow Controls}
+
+\author{
+  Tim Disney
+  University of California, Santa Cruz \\
+  tdisney@ucsc.edu
+  \and
+  Thomas H. Austin \\
+  San Jos\'{e} State University \\
+  thomas.austin@sjsu.edu
+  }
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Information flow analysis been often suggested as a
+good candidate for securing JavaScript code~\cite{aaa}.
+However, most solutions require modifying the underlying JavaScript engine.
+This paper proposes using macros to rewrite untrusted 3rd party code,
+integrating information flow controls in the process.
+We show how this strategy can provide taint analysis,
+how it can support the no-sensitive-upgrade strategy,
+and faceted values.
+\end{abstract}
+
+%%%%
+\section{Introduction}
+
+Why do we care about info flow?
+
+Why do we care about combining macros with info flow?
+
+Place it in context with Caja, AdSafe, etc.
+What can we do that they can't?
+
+
+%%%%
+\section{Review of Information Flow}
+
+%%%%
+\section{Overview of Macros and Sweet.js}
+
+%%%%
+\section{Our approach}
+
+\subsection{Taint Analysis}
+
+\subsection{No-sensitive-upgrade approach}
+
+Mention permissive-upgrade approach?
+(Some interest from Christian Hammer and co.)
+
+\subsection{Faceted Evaluation}
+
+Comparison to secure multi-execution.
+
+JS-specific challenges.
+
+%%%%
+\section{Performance Comparison}
+
+%%%%
+\section{Related Work}
+
+
+
+
+\bibliographystyle{plainurl}
+\bibliography{biblio.bib}
+
+
+\end{document}
+
